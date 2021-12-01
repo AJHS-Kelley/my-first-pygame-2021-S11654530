@@ -45,3 +45,22 @@ pygame.Draw.circle(windowsurface, Black, (300,50),20,0)
 
 # Draw an ellipise
 pygame.draw.rect(windowsurface, RED, (textRect.left - 20,))
+
+# Draw the text rectangle.
+pygame
+
+
+
+
+# Draw the text onto the surface.
+windowsurface.blit(text, textRect)
+
+#update pygame display
+pygame.display.update()
+
+# Run game loop.
+while True:
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.QUIT()
+            sys.exit()
